@@ -2,6 +2,7 @@ import '../styles/styles.scss';
 
 import React from 'react';
 import {MINIMAL_VIEWPORTS} from '@storybook/addon-viewport';
+import {DocsContainer} from '@storybook/addon-docs';
 import {CloudTheme} from './theme';
 import {withTheme} from './decorators/withTheme';
 import {withMobile} from './decorators/withMobile';
@@ -36,6 +37,9 @@ export const decorators = [withTheme, withMobile, withLang, withContextProvider]
 export const parameters = {
     docs: {
         theme: CloudTheme,
+        container: ({children, context}) => (
+            <DocsContainer context={context}>{children}</DocsContainer>
+        ),
     },
     // FIXME: Disabled due to performance reasons. See https://github.com/storybookjs/storybook/issues/5551
     // actions: {

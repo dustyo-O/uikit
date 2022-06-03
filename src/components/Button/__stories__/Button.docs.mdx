@@ -1,0 +1,60 @@
+import {Source} from '@storybook/addon-docs';
+import {
+    ButtonExampleViewAction,
+    ButtonExampleViewNormal,
+    ButtonExampleViewOutlined,
+    ButtonExampleViewFlat,
+} from './examples/ButtonExampleView/ButtonExampleView';
+
+# Button
+
+```ts
+import {Button} from '@yandex-cloud/uikit';
+```
+
+Кнопка используется как триггер для выполнения определённого действия.
+Основное назначение кнопки – запуск действия, очень редко используется для перехода на другую страницу вместо ссылок.
+
+Также кнопки используются в диалоговом окне, когда интерфейс предлагает совершить те или иные альтернативные действия.
+Например, продолжить работу или вернуться к редактированию.
+
+## Внешний вид
+
+Для проектирования интерфейсов облачных сервисов используем 5 основных (`action`, `normal`, `outline`, `flat`, `raised`),
+5 дополнительных (`outline-info`, `outline-danger`, `flat-info`, `flat-danger`, `flat-secondary`) и 3 специальных (`normal-contrast`, `outline-contrast`, `flat-contrast`) типов кнопок.
+За внешний вид отвечает свойство view.
+
+### Action
+
+Самая заметная кнопка, используется для ключевого действия на экране, требующего максимального внимания.
+Рекомендуем использовать только одну такую кнопку на странице (не считая диалоговые окна).
+
+<Source language="tsx" code={ButtonExampleViewAction.code}/>
+
+<ButtonExampleViewAction/>
+
+### Normal
+
+Это основной тип кнопки (используется по умолчанию). Используется для вторичных действий или когда нужно сохранить важность действия,
+но не слишком привлекать к нему внимание.
+
+<Source language="tsx" code={ButtonExampleViewNormal.code}/>
+
+<ButtonExampleViewNormal/>
+
+### Outline
+
+Используется для вторичных действий, требующих меньшего внимания на странице. Может использоваться как с основной кнопкой, так и без нее (только с акцентной).
+
+<Source language="tsx" code={ButtonExampleViewOutlined.code}/>
+
+<ButtonExampleViewOutlined/>
+
+### Flat
+
+Используется для вспомогательных действий, требующих наименьшего внимания на странице. Часто встречаются в списке кнопок, иконки (без текста) действий в редакторах.
+
+<Source language="tsx" code={ButtonExampleViewFlat.code}/>
+
+<ButtonExampleViewFlat/>
+
