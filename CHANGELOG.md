@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.0](https://github.com/yandex-cloud/uikit/compare/v2.7.0...v2.8.0) (2022-06-22)
+
+
+### Features
+
+* **Table:** add ability to set className of all cells in a column ([#205](https://github.com/yandex-cloud/uikit/issues/205)) ([b5e6608](https://github.com/yandex-cloud/uikit/commit/b5e66088e1b384ee16b7700bf03cf331f3b5236a))
+
+
+### Bug Fixes
+
+* ThemeProvider theme updating ([#202](https://github.com/yandex-cloud/uikit/issues/202)) ([4b0962d](https://github.com/yandex-cloud/uikit/commit/4b0962decd51afaef0c9d21e8821c14a93b08b46))
+
 ## [2.7.0](https://github.com/yandex-cloud/uikit/compare/v2.6.0...v2.7.0) (2022-06-20)
 
 
